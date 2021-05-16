@@ -1,5 +1,18 @@
 <html>
 <head>
+	<!--css선언 순서, 상속-->
+	<style>
+		body > div {
+			color: blue;
+			font-size: 30px;
+			border: 2px solid slategray;
+			padding: 30px;	
+		}
+
+		div ul li div p {
+			color : green;
+		}
+	</style>
 </head>
 <body>
 	<div>
@@ -14,7 +27,6 @@
 			<li>
 			</li>
 		</ul>
-
 	</div>
 </body>
 </html>
