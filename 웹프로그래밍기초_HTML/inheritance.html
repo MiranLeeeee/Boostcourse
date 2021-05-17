@@ -1,6 +1,11 @@
 <html>
 <head>
 	<!--css선언 순서, 상속-->
+	<!-- CSS cascading: inline>internal>external
+		1. 동일한 태그 등은 나중에 선언한 것이 적용
+		2. 같은 태그를 표현하더라도 구체적인 것을 우선 적용
+		3. 같은 태그가 아이디와 클래스로 표현될 때 아이디를 우선 적용
+	-->
 	<style>
 		body > div {
 			color: blue;
