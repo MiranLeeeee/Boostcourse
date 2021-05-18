@@ -1,0 +1,44 @@
+<html>
+<head>
+	<!--
+	태그#이름: 태그 중 아이디가 이름인 요소
+	태그 .이름: 태그 내부에 클래스가 이름인 요소
+	* 하위 요소는 공백으로 표현하고 자식선택과 의미가 같음
+	자식 선택은 >로 표현
+	* 태그의 바로 하위 자식의 n번째 자식요소를 선택할 경우 nth-child 사용
+	div > p:nth-child(2) {}
+	-->
+	<style>
+		span {
+			color: red;
+		}
+
+		span#myspan {
+			color: blue;
+		}
+
+		div .myp {
+			color: green;
+		}
+
+		#wrapper > span:nth-child(2) {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<p>클래스가 없는 p 태그입니다.</p>
+	<div id="wrapper">
+		<span id="myspan">My text is upper! span1</span>
+		<span>My text is upper! span2</span>
+		<ul>
+			<li>
+				<span>My text is dummy</span>
+				<div>
+					<p class="myp">클래스가 있는 p 태그입니다.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
