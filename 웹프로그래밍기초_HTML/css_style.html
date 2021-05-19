@@ -1,0 +1,27 @@
+<html>
+<head>
+	<!--
+	색상은 색상명, rgb, rgba, #16진수으로 표현가능
+	글자크기는 px, em -> em은 기본 16px이며 부모태그의 font-size가 있을 경우
+	그 사이즈를 기준으로 em을 적용 (em은 상속 받음)
+	폰트형태는 font-family속성을 통해 지정함
+	-->
+	<style>
+		body > div {
+			font-size: 32px;
+			background-color: yellow;
+			font-family: monospace;
+		}
+
+		.myspan {
+			color : rgba(255,0,0,0.5);
+			font-size: 1em;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<span class="myspan">my text is upper!</span>
+	</div>
+</body>
+</html>
